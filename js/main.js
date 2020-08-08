@@ -55,7 +55,7 @@ $(document).ready(function(){
                             <span class="badge badge-success">Followers :${user.followers}</span>
                             <span class="badge badge-info">Following:${user.following}</span>
                             <ul class="list-group">
-                                <li class="list-group-item">Company:${user.company}</li>
+                                <li class="list-group-item">Company:${user.company == null?'no company yet':user.company}</li>
                                 <li class="list-group-item">Website/Blog:${user.blog}</li>
                                 <li class="list-group-item">Location:${user.location}</li>
                                 <li class="list-group-item">Member Since:${user.created_at}</li>
